@@ -36,3 +36,33 @@ Para poder realizar la práctica es necesario comprender cabalmente los siguient
 Si no maneja estos conceptos; sobre el primero, por favor estúdielos con detenimiento, de la comprensión de estos depende el desarrollo de la práctica. También, revise la teoría más simple en caso de no creer tener la suficiente familiaridad con el lenguaje C. Es necesario la comprensión de los conceptos más básicos en C para poder manejar archivos, implementación de funciones, manejo de punteros y arreglos.
 
 Tenga además en cuenta que se agregan bastantes ejemplos con el fin de que los analice y comprenda. Si tiene dificultades para entenderlos pregunte sin pena en el foro del curso y vea los videos que allí se compartieron. Recuerden, No hay pregunta boba, bobo es el que no pregunta.
+
+
+rm -f wish 
+
+gcc -o wish wish.c -Wall -Werror
+
+
+
+echo $? cat tests/1.rc cat tests-out/1.rc
+
+cat -A tests/1.rc cat -A tests-out/1.rc
+
+--Pra correr los text
+
+rm -rf tests-out  
+
+./test-wish.sh
+
+-- Lanzar el shell
+
+./wish
+
+-- Redirección
+
+echo hola > out.txt
+cat out.txt  
+
+-- Paralelo
+
+sleep 1 & echo uno & echo dos
