@@ -1,12 +1,3 @@
-// wish.c — Minimal Unix-like shell (based on Remzi's "Process Shell" assignment)
-// Cumple: modo interactivo/batch, built-ins (exit, cd, path),
-// redirección ">" (stdout+stderr), comandos paralelos "&", búsqueda con PATH,
-// mensaje de error único, uso de execv/access, fork/wait.
-//
-// Compilación: gcc -Wall -Wextra -O2 -o wish wish.c
-// Uso interactivo: ./wish
-// Uso batch:      ./wish batch.txt
-
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
